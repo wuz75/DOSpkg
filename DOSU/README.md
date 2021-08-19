@@ -1,5 +1,5 @@
 
-# DOSpkg
+# DOSpkg+U
 
 1. Performs Density of States calculations using DFT+U through Quantum Espresso
 2. Generates Density of States plots from calculations
