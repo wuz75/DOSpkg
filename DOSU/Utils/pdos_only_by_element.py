@@ -53,15 +53,12 @@ def color_by_ele(formula):
         Bandgap = abs(Energy[ValenceBandPoint]-Energy[ConductionBandPoint])
         Compiled.append([filename,Energy[ValenceBandPoint],Energy[ConductionBandPoint],Bandgap])
         specie = filename[filename.find("(")+1:filename.find(")")]
+        specie=re.findall(r'\D+',specie)[0]
+        print(specie)
         for i,eng in enumerate(Energy):
             Energy[i]=eng-VBM
         plot(Energy, LDOS, colorkey[specie])
         contents.close()
-        plot(Energy, LDOS, colorkey[specie])
-        contents.close()
-    #print("Name\tVBM\tCBM\tBandGap")
-    #for i in Compiled:
-        #print(i[0],"\t",i[1],"\t",i[2],"\t",i[3])
     Bandgap = abs(VBM-CBM)
     print("Totals:\tVBM\tCBM\tBandgap")
     print("\t",VBM,"\t",CBM,"\t",Bandgap)
