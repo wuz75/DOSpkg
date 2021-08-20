@@ -28,7 +28,3 @@ Be sure to enter the mp-id in the format mp-#### when prompted in the command li
 
 ## Authors
 Wayne Zhao, Nicole Kirchner-Hall, Vincent Xiong
-
-## Updates
-Aug 4 2021 changed ppn from 5 to 20 and RAM to 10GB from 5GB so calculations run faster
-
